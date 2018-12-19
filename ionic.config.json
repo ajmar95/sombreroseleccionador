@@ -1,0 +1,7 @@
+{
+  "name": "SombreroSelecionador",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
