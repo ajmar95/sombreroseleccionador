@@ -1,0 +1,77 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>pregunta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h1 *ngIf="c==0">¿Que adjetivos te definen mejor?</h1>
+<button *ngIf="c==0"(click)="ra()" class="button button-block button-positive" ion-button color="light">inteligente y creativo</button>
+<button *ngIf="c==0"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Valiente y aventutrero</button>
+<button *ngIf="c==0"(click)="sl()"  class="button button-block button-positive" ion-button color="light">astuta y habil</button>
+<button *ngIf="c==0"(click)="ha()"  class="button button-block button-positive" ion-button color="light">Paciente y responsable</button>
+
+<h1 *ngIf="c==1">¿Elige un elemento?</h1>
+<button *ngIf="c==1"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Fuego</button>
+<button *ngIf="c==1"(click)="sl()" class="button button-block button-positive" ion-button color="light">Agua</button>
+<button *ngIf="c==1"(click)="ra()"  class="button button-block button-positive" ion-button color="light">Aire</button>
+<button *ngIf="c==1"(click)="ha()" class="button button-block button-positive" ion-button color="light">tierra</button>
+<h1 *ngIf="c==2">¿Cuando tienes que tomar una decision te fias?</h1>
+<button *ngIf="c==2"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Instinto</button>
+<button *ngIf="c==2"(click)="rs()" class="button button-block button-positive" ion-button color="light">Razon</button>
+<button *ngIf="c==2"(click)="ha()" class="button button-block button-positive" ion-button color="light">De lo que digan los demas</button>
+<h1 *ngIf="c==3">Para ti ¿Que es mas importante para ser feliz?</h1>
+<button *ngIf="c==3"(click)="sl()"  class="button button-block button-positive" ion-button color="light">Tener mucho dinero y poder</button>
+<button *ngIf="c==3"(click)="gr()" class="button button-block button-positive" ion-button color="light">Amigos y familia que te quiera</button>
+<button *ngIf="c==3"(click)="ra()"  class="button button-block button-positive" ion-button color="light">Ser inteligente y saber desenvolverse en la vida</button>
+<button *ngIf="c==3"(click)="ha()"  class="button button-block button-positive" ion-button color="light">Tomarse las cosas con calma y huir de los problemas</button>
+<h1 *ngIf="c==4">¿Quien eres en el grupo de amigos?</h1>
+<button *ngIf="c==4"(click)="sl()"  class="button button-block button-positive" ion-button color="light">El que lleva la voz cantante y decide lo que se hace</button>
+<button *ngIf="c==4"(click)="gr()" class="button button-block button-positive" ion-button color="light">El que se adapta a cualquier plan y siempre esta de buen royo </button>
+<button *ngIf="c==4"(click)="ha()"  class="button button-block button-positive" ion-button color="light">El que siempre escucha y ayuda a los demas</button>
+<button *ngIf="c==4"(click)="ra()" class="button button-block button-positive" ion-button color="light">El que siempre tiene las mejores ideas</button>
+<h1 *ngIf="c==5">¿Dónde pasarías tu tiempo en Hogwarts?</h1>
+<button *ngIf="c==5"(click)="ha()"  class="button button-block button-positive" ion-button color="light">Gran Comedor</button>
+<button *ngIf="c==5"(click)="gr()" class="button button-block button-positive" ion-button color="light">Campo de quiddich </button>
+<button *ngIf="c==5"(click)="ra()" class="button button-block button-positive" ion-button color="light">Sala de los menesteres</button>
+<button *ngIf="c==5"(click)="sl()" class="button button-block button-positive" ion-button color="light">Bosque prohivido</button>
+<h1 *ngIf="c==6">En una discursion</h1>
+<button *ngIf="c==6"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Intento respetar todos los puntos de vista y llegar a un punto en comun</button>
+<button *ngIf="c==6"(click)="ra()" class="button button-block button-positive" ion-button color="light">Expongo mis argumentos para que todos vean que tengo razon</button>
+<button *ngIf="c==6"(click)="ha()" class="button button-block button-positive" ion-button color="light">No me gusta discutir suelo ceder para no llevarme mal con nadie</button>
+<button *ngIf="c==6"(click)="sl()" class="button button-block button-positive" ion-button color="light">No doy mi brazo a torcer e intento quedar por encima de los demas</button>
+<h1 *ngIf="c==7">¿Si pudieras pedir un deseo seria?</h1>
+<button *ngIf="c==7"(click)="sl()" class="button button-block button-positive" ion-button color="light">Ser inmortal</button>
+<button *ngIf="c==7"(click)="gr()" class="button button-block button-positive" ion-button color="light">Poder revivir a alguien</button>
+<button *ngIf="c==7"(click)="ra()" class="button button-block button-positive" ion-button color="light">Paz en le mundo</button>
+<button *ngIf="c==7"(click)="ha()"  class="button button-block button-positive" ion-button color="light">Deseos imfinitos</button>
+<h1 *ngIf="c==8">¿Que tareas te resultan mas estimulantes?</h1>
+<button *ngIf="c==8"(click)="ra()" class="button button-block button-positive" ion-button color="light">Las que suponen un reto para mi cerebro</button>
+<button *ngIf="c==8"(click)="sl()" class="button button-block button-positive" ion-button color="light">Las que me permitan demostrar que soy mejor que los demas</button>
+<button *ngIf="c==8"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Las que implican un poco de riesgo</button>
+<button *ngIf="c==8"(click)="ha()" class="button button-block button-positive"  ion-button color="light">Las que requieren mucho trabajo y esfuerzo</button>
+<h1 *ngIf="c==9">¿Por lo general la gente te parece?</h1>
+<button *ngIf="c==9"(click)="sl()" class="button button-block button-positive" ion-button color="light">Cobarde</button>
+<button *ngIf="c==9"(click)="ra()" class="button button-block button-positive" ion-button color="light">Tonta</button>
+<button *ngIf="c==9"(click)="ha()"  class="button button-block button-positive" ion-button color="light">irresponsable</button>
+<button *ngIf="c==9"(click)="gr()"  class="button button-block button-positive" ion-button color="light">ingenua</button>
+<button *ngIf="c==10"(click)="re()"  ion-button color="light">Resultado</button>
+<img *ngIf="x==1" src="../../assets/imgs/gry.jpg"/>
+<img *ngIf="x==3" src="../../assets/imgs/sly.jpeg"/>
+<img *ngIf="x==4" src="../../assets/imgs/huf.jpg"/>
+<img *ngIf="x==2" src="../../assets/imgs/ra.jpg"/>
+<div *ngIf="x==5">
+<h1 >¿A que casa te gustaria pertenecer?</h1>
+<button (click)="es()" class="button button-block button-positive"  ion-button color="light">Slytherin</button>
+<button (click)="er()" class="button button-block button-positive" ion-button color="light">Ravenclaw</button>
+<button (click)="eh()" class="button button-block button-positive"  ion-button color="light">Hufflepuff</button>
+<button (click)="eg()" class="button button-block button-positive" ion-button color="light">Gryffindor</button>
+<img *ngIf="x==1" src="../../assets/imgs/gry.jpg"/>
+<img *ngIf="x==3" src="../../assets/imgs/sly.jpeg"/>
+<img *ngIf="x==4" src="../../assets/imgs/huf.jpg"/>
+<img *ngIf="x==2" src="../../assets/imgs/ra.jpg"/>
+</div>
+</ion-content>

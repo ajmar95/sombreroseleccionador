@@ -1,5 +1,32 @@
 page-home {
-    ion-content{background-image: url('../../assets/imgs/fondo.jpg');
-        background-size:100% 100%;}
-    p{color:white}
+    ion-content{background-image: url('../../assets/imgs/Fondo.jpg');
+        background-repeat:no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;}
+        //.container-fluid {
+            //background-color: cyan;
+            //border: 2px solid black;
+           /* display: flex;
+            justify-content: center;
+          }/*
+          
+         // .col {
+           // background-color: pink;
+            //border: 2px solid black;
+        //  }
+      /* button{
+          // position: center;
+            background-image:url("../../assets/imgs/s1.png");
+            background-repeat:no-repeat;
+           // height:900px;
+          //  width:700px;
+          width:100%;
+            background-position:center;
+          }*/
+          img {
+              align-self: center;
+          }
 }
+

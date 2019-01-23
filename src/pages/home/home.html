@@ -1,12 +1,13 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      SombreroSeleccionador
+      Sombrero Seleccionador
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <p><b>Bienvenido soy el Sombrero seleccionador</b>
-  </p>
-</ion-content>
+        <img *ngIf="num==0"(click)="incrementar()" src="../../assets/imgs/s1.png"/>
+        <img *ngIf="num==1"(click)="incrementar()" src="../../assets/imgs/s2.png"/>
+        <img *ngIf="num==2"(click)="preg()" src="../../assets/imgs/s3.png"/>
+    </ion-content>
