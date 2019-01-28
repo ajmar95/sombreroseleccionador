@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { dashCaseToCamelCase } from '@angular/compiler/src/util';
-import { removeSummaryDuplicates } from '@angular/compiler';
+
 
 /**
  * Generated class for the PreguntaPage page.
@@ -28,26 +27,39 @@ export class PreguntaPage {
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+   
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PreguntaPage');
   }
+
     ra(){
     this.c++;
       this.r++;
+      if(this.c==10){
+        this.re();
+      }
   }
   ha(){
     this.c++;
     this.h++;
+    if(this.c==10){
+      this.re();
+    }
   }
   sl(){
     this.c++;
     this.s++;
+    if(this.c==10){
+      this.re();
+    }
   }
   gr(){ this.c++;
-  this.g++;}
+  this.g++;
+  if(this.c==10){
+    this.re();
+  }}
  rs(){
   this.c++;
   this.s++;

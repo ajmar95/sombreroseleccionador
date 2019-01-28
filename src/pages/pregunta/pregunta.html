@@ -1,76 +1,137 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>pregunta</ion-title>
-  </ion-navbar>
-
 </ion-header>
-
-
 <ion-content padding>
-<h1 *ngIf="c==0">¿Que adjetivos te definen mejor?</h1>
-<button *ngIf="c==0"(click)="ra()" class="button button-block button-positive" ion-button color="light">Inteligente y creativo</button>
-<button *ngIf="c==0"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Valiente y aventutrero</button>
-<button *ngIf="c==0"(click)="sl()"  class="button button-block button-positive" ion-button color="light">Astuta y habil</button>
-<button *ngIf="c==0"(click)="ha()"  class="button button-block button-positive" ion-button color="light">Paciente y responsable</button>
-<h1 *ngIf="c==1">¿Elige un elemento?</h1>
-<button *ngIf="c==1"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Fuego</button>
-<button *ngIf="c==1"(click)="sl()" class="button button-block button-positive" ion-button color="light">Agua</button>
-<button *ngIf="c==1"(click)="ra()"  class="button button-block button-positive" ion-button color="light">Aire</button>
-<button *ngIf="c==1"(click)="ha()" class="button button-block button-positive" ion-button color="light">Tierra</button>
-<h1 *ngIf="c==2">¿Cuando tienes que tomar una decision te fias?</h1>
-<button *ngIf="c==2"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Instinto</button>
-<button *ngIf="c==2"(click)="rs()" class="button button-block button-positive" ion-button color="light">Razon</button>
-<button *ngIf="c==2"(click)="ha()" class="button button-block button-positive" ion-button color="light">De lo que digan los demas</button>
-<h1 *ngIf="c==3">Para ti ¿Que es mas importante para ser feliz?</h1>
-<button *ngIf="c==3"(click)="sl()"  class="button button-block button-positive" ion-button color="light">Tener mucho dinero y poder</button>
-<button *ngIf="c==3"(click)="gr()" class="button button-block button-positive" ion-button color="light">Amigos y familia que te quiera</button>
-<button *ngIf="c==3"(click)="ra()"  class="button button-block button-positive" ion-button color="light">Ser inteligente y saber <br/> desenvolverse en la vida</button>
-<button *ngIf="c==3"(click)="ha()"  class="button button-block button-positive" ion-button color="light">Tomarse las cosas con calma y <br/> huir de los problemas</button>
-<h1 *ngIf="c==4">¿Quien eres en el grupo de amigos?</h1>
-<button *ngIf="c==4"(click)="sl()"  class="button button-block button-positive" ion-button color="light">El que lleva la voz cantante y <br/>decide lo que se hace</button>
-<button *ngIf="c==4"(click)="gr()" class="button button-block button-positive" ion-button color="light">El que se adapta a cualquier plan y <br/>siempre esta de buen royo </button>
-<button *ngIf="c==4"(click)="ha()"  class="button button-block button-positive" ion-button color="light">El que siempre escucha y <br/>ayuda a los demas</button>
-<button *ngIf="c==4"(click)="ra()" class="button button-block button-positive" ion-button color="light">El que siempre tiene <br/>las mejores ideas</button>
-<h1 *ngIf="c==5">¿Dónde pasarías tu tiempo en Hogwarts?</h1>
-<button *ngIf="c==5"(click)="ha()"  class="button button-block button-positive" ion-button color="light">Gran Comedor</button>
-<button *ngIf="c==5"(click)="sl()" class="button button-block button-positive" ion-button color="light">Campo de quiddich </button>
-<button *ngIf="c==5"(click)="ra()" class="button button-block button-positive" ion-button color="light">Sala de los menesteres</button>
-<button *ngIf="c==5"(click)="gr()" class="button button-block button-positive" ion-button color="light">Bosque prohibido</button>
-<h1 *ngIf="c==6">En una discursion</h1>
-<button *ngIf="c==6"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Intento respetar todos los puntos de <br/> vista y llegar a un punto en comun</button>
-<button *ngIf="c==6"(click)="ra()" class="button button-block button-positive" ion-button color="light">Expongo mis argumentos para que <br/>todos vean que tengo razon</button>
-<button *ngIf="c==6"(click)="ha()" class="button button-block button-positive" ion-button color="light">No me gusta discutir suelo ceder <br/>para no llevarme mal con nadie</button>
-<button *ngIf="c==6"(click)="sl()" class="button button-block button-positive" ion-button color="light">No doy mi brazo a torcer e intento<br/> quedar por encima de los demas</button>
-<h1 *ngIf="c==7">¿Si pudieras pedir un deseo seria?</h1>
-<button *ngIf="c==7"(click)="sl()" class="button button-block button-positive" ion-button color="light">Ser inmortal</button>
-<button *ngIf="c==7"(click)="gr()" class="button button-block button-positive" ion-button color="light">Poder revivir a alguien</button>
-<button *ngIf="c==7"(click)="ha()" class="button button-block button-positive" ion-button color="light">Paz en le mundo</button>
-<button *ngIf="c==7"(click)="ra()"  class="button button-block button-positive" ion-button color="light">Deseos imfinitos</button>
-<h1 *ngIf="c==8">¿Que tareas te resultan mas estimulantes?</h1>
-<button *ngIf="c==8"(click)="ra()" class="button button-block button-positive" ion-button color="light">Las que suponen un <br/>reto para mi cerebro</button>
-<button *ngIf="c==8"(click)="sl()" class="button button-block button-positive" ion-button color="light">Las que me permitan demostrar <br/>que soy mejor que los demas</button>
-<button *ngIf="c==8"(click)="gr()"  class="button button-block button-positive" ion-button color="light">Las que implican <br/>un poco de riesgo</button>
-<button *ngIf="c==8"(click)="ha()" class="button button-block button-positive"  ion-button color="light">Las que requieren mucho<br/> trabajo y esfuerzo</button>
-<h1 *ngIf="c==9">¿Por lo general la gente te parece?</h1>
-<button *ngIf="c==9"(click)="gr()" class="button button-block button-positive" ion-button color="light">Cobarde</button>
-<button *ngIf="c==9"(click)="ra()" class="button button-block button-positive" ion-button color="light">Tonta</button>
-<button *ngIf="c==9"(click)="ha()"  class="button button-block button-positive" ion-button color="light">irresponsable</button>
-<button *ngIf="c==9"(click)="sl()"  class="button button-block button-positive" ion-button color="light">Ingenua</button>
-<button *ngIf="c==10"(click)="re()"  ion-button color="light">Resultado</button>
-<img *ngIf="x==1" src="../../assets/imgs/gry.jpg"/>
-<img *ngIf="x==3" src="../../assets/imgs/sly.jpeg"/>
-<img *ngIf="x==4" src="../../assets/imgs/huf.jpg"/>
-<img *ngIf="x==2" src="../../assets/imgs/ra.jpg"/>
+<div *ngIf="c==0"><h1 *ngIf="c==0">¿Que adjetivos te definen mejor?</h1>
+<button *ngIf="c==0"(click)="ra()">Inteligente y creativo</button><br/>
+<button *ngIf="c==0"(click)="gr()" >Valiente y aventutrero</button><br/>
+<button *ngIf="c==0"(click)="sl()"  >Astuta y habil</button><br/>
+<button *ngIf="c==0"(click)="ha()">Paciente y responsable</button>
+</div>
+<div *ngIf="c==1">
+<h1 >¿Elige un elemento?</h1>
+<button (click)="gr()">Fuego</button><br/>
+<button (click)="sl()">Agua</button><br/>
+<button (click)="ra()">Aire</button><br/>
+<button (click)="ha()" >Tierra</button>
+</div>
+<div *ngIf="c==2">
+<h1 >¿Cuando tienes que tomar una decision te fias?</h1>
+<button (click)="gr()">Instinto</button><br/>
+<button (click)="rs()">Razon</button><br/>
+<button (click)="ha()">De lo que digan los demas</button>
+</div>
+<div *ngIf="c==3">
+<h1>Para ti ¿Que es mas importante para ser feliz?</h1>
+<button (click)="sl()" >Tener mucho dinero y poder</button><br/>
+<button (click)="gr()" >Amigos y familia que te quiera</button><br/>
+<button (click)="ra()">Ser inteligente y saberdesenvolverse en la vida</button><br/>
+<button (click)="ha()">Tomarse las cosas con calma y huir de los problemas</button>
+</div>
+<div *ngIf="c==4">
+<h1 >¿Quien eres en el grupo de amigos?</h1>
+<button (click)="sl()" >El que lleva la voz cantante y decide lo que se hace</button><br/>
+<button (click)="gr()">El que se adapta a cualquier plan y siempre esta de buen royo </button><br/>
+<button (click)="ha()" >El que siempre escucha y ayuda a los demas</button><br/>
+<button (click)="ra()">El que siempre tiene las mejores ideas</button>
+</div>
+<div *ngIf="c==5">
+<h1 >¿Dónde pasarías tu tiempo en Hogwarts?</h1>
+<button (click)="ha()">Gran Comedor</button><br/>
+<button (click)="sl()">Campo de quiddich </button><br/>
+<button (click)="ra()">Sala de los menesteres</button><br/>
+<button (click)="gr()">Bosque prohibido</button>
+</div>
+<div *ngIf="c==6">
+<h1 >En una discursion</h1>
+<button (click)="gr()">Intento respetar todos los puntos de vista y llegar a un punto en comun</button><br/>
+<button (click)="ra()">Expongo mis argumentos para que todos vean que tengo razon</button><br/>
+<button (click)="ha()">No me gusta discutir suelo ceder para no llevarme mal con nadie</button><br/>
+<button (click)="sl()">No doy mi brazo a torcer e intento quedar por encima de los demas</button>
+</div>
+<div *ngIf="c==7">
+<h1 >¿Si pudieras pedir un deseo seria?</h1>
+<button (click)="sl()">Ser inmortal</button><br/>
+<button (click)="gr()">Poder revivir a alguien</button><br/>
+<button (click)="ha()">Paz en le mundo</button><br/>
+<button (click)="ra()">Deseos imfinitos</button>
+</div>
+<div *ngIf="c==8">
+<h1 >¿Que tareas te resultan mas estimulantes?</h1>
+<button (click)="ra()">Las que suponen un reto para mi cerebro</button><br/>
+<button  (click)="sl()">Las que me permitan demostrar que soy mejor que los demas</button><br/>
+<button (click)="gr()">Las que implican un poco de riesgo</button><br/>
+<button (click)="ha()">Las que requieren mucho trabajo y esfuerzo</button>
+</div>
+<div *ngIf="c==9">
+<h1 >¿Por lo general la gente te parece?</h1>
+<button  (click)="gr()">Cobarde</button><br/>
+<button (click)="ra()">Tonta</button><br/>
+<button (click)="ha()">irresponsable</button><br/>
+<button (click)="sl()">Ingenua</button>
+</div>
+<div *ngIf="x==1"> 
+<img src="../../assets/imgs/gry.jpg"/>
+<p class="gr"><b>Gryffindor fue fundada por Godric Gryffindor. Su animal emblemático es el león y sus colores son el rojo escarlata y el dorado.<br/>
+  Sir Nicholas de Mimsy-Porpington también conocido como "Nick Casi Decapitado" es el fantasma de la casa<br/>
+Las principales características de los Gryffindor son el coraje y la caballerosidad.<br/>
+Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius Black.
+</b></p>
+</div>
+<div *ngIf="x==3">
+<img  src="../../assets/imgs/sly.jpeg"/>
+<p class="sl"><b>Fue fundada por Salazar Slytherin.<br/>
+  Las principales características de un slytherin son astucia, ingenio y ambición.<br/>
+  Algunos miembros de la casa: Tom Ryddle,Bellatrix Lestrange, Severus Snape,  Draco Malfoy.
+</b> </p>
+</div>
+<div *ngIf="x==4">
+<img  src="../../assets/imgs/huf.jpg"/>
+<p class="hu"><b>
+    La fundadora es la bruja medieval Helga Hufflepuff.<br/> 
+    El fraile gordo es el fantasma de la casa.<br/> 
+    Hufflepuff es la más inclusiva de las cuatro casas; el trabajo duro, la paciencia, la amistad y la honestidad son sumamente necesarias para ser miembros.<br/> 
+    Su animal emblemático es el tejón y sus colores son el amarillo y negro.<br/>
+    Algunos de sus miembros:Nymphadora Tonks, Cedric Diggory,Susan Bones.</b>
+</p>
+</div>
+<div *ngIf="x==2">
+<img  src="../../assets/imgs/ra.jpg"/>
+<p class="ra"><b>Fue fundada por Rowena Ravenclaw.<br/>
+  La casa Ravenclaw premia el aprendizaje, la sabiduría, el ingenio, y el intelecto de sus miembros.<br/>
+  Algunos de sus miembros: Luna Lovegood, Quirinus Quirrell, Gilderoy Lockhart.</b>
+</p>
+</div>
 <div *ngIf="x==5">
 <h1 >¿A que casa te gustaria pertenecer?</h1>
-<button (click)="es()" class="button button-block button-positive"  ion-button color="light">Slytherin</button>
-<button (click)="er()" class="button button-block button-positive" ion-button color="light">Ravenclaw</button>
-<button (click)="eh()" class="button button-block button-positive"  ion-button color="light">Hufflepuff</button>
-<button (click)="eg()" class="button button-block button-positive" ion-button color="light">Gryffindor</button>
+<button class="s"  (click)="es()">Slytherin</button><br/>
+<button class="r" (click)="er()">Ravenclaw</button><br/>
+<button class="h" (click)="eh()">Hufflepuff</button><br/>
+<button class="g" (click)="eg()">Gryffindor</button><br/>
 <img *ngIf="x==1" src="../../assets/imgs/gry.jpg"/>
+<p class="gr" *ngIf="x==1" ><b>Gryffindor fue fundada por Godric Gryffindor. Su animal emblemático es el león y sus colores son el rojo escarlata y el dorado.<br/>
+  Sir Nicholas de Mimsy-Porpington también conocido como "Nick Casi Decapitado" es el fantasma de la casa<br/>
+Las principales características de los Gryffindor son el coraje y la caballerosidad.<br/>
+Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius Black.</b>
+</p>
 <img *ngIf="x==3" src="../../assets/imgs/sly.jpeg"/>
-<img *ngIf="x==4" src="../../assets/imgs/huf.jpg"/>
+<p class="sl" *ngIf="x==3"><b>Fue fundada por Salazar Slytherin.<br/>
+ Las principales características de un slytherin son astucia, ingenio y ambición.<br/>
+ Algunos miembros de la casa: Tom Ryddle,Bellatrix Lestrange, Severus Snape,  Draco Malfoy.
+</b>
+</p>
+<img class="hu" *ngIf="x==4" src="../../assets/imgs/huf.jpg"/>
+<p *ngIf="x==4"><b>
+    Lu fundadora es la bruja medieval Helga Hufflepuff.<br/> 
+    El fraile gordo es el fantasma de la casa.<br/> 
+    Hufflepuff es la más inclusiva de las cuatro casas; el trabajo duro, la paciencia, la amistad y la honestidad son sumamente necesarias para ser miembros.<br/> 
+    Su animal emblemático es el tejón y sus colores son el amarillo y negro.<br/>
+    Algunos de sus miembros:Nymphadora Tonks, Cedric Diggory,Susan Bones,Newt Scamander.</b>
+</p>
 <img *ngIf="x==2" src="../../assets/imgs/ra.jpg"/>
+<p  class="ra" *ngIf="x==2"><b>Fue fundada por Rowena Ravenclaw.<br/>
+  La casa Ravenclaw premia el aprendizaje, la sabiduría, el ingenio, y el intelecto de sus miembros.<br/>
+  Algunos de sus miembros: Luna Lovegood, Quirinus Quirrell, Gilderoy Lockhart.</b>
+</p>
 </div>
 </ion-content>

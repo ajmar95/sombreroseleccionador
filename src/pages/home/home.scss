@@ -1,12 +1,13 @@
 page-home {
-    ion-content{
-        background: url('../../assets/imgs/Fondo.jpg') no-repeat center center fixed;
+    ion-content{background-image: url('../../assets/imgs/gc.jpg');
+        background-image: no-repeat;
+background-image: fixed;
+background-image: center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-background-size: cover;}
-          img {
-              align-self: center;
-          }
+background-size: cover;
+       }
+              
 }
 

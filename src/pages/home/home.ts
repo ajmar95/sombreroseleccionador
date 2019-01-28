@@ -18,6 +18,7 @@ export class HomePage {
   }
   preg(){
     this.navCtrl.push(PreguntaPage);
+    this.num=0;
 }
 }
 
