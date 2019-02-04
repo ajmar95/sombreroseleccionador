@@ -11,8 +11,7 @@ export class HomePage {
   num : number=0;
 
   constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
-    
-  }
+ }
   incrementar(){
     this.num++;
   }
@@ -21,4 +20,3 @@ export class HomePage {
     this.num=0;
 }
 }
-
