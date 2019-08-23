@@ -71,6 +71,7 @@
 <button (click)="sl()">Ingenua</button>
 </div>
 <div *ngIf="x==1"> 
+    <audio autoplay src="../../assets/Audio/g.mp3"></audio>
 <img src="../../assets/imgs/gry.jpg"/>
 <p class="gr">Gryffindor fue fundada por Godric Gryffindor. Su animal emblemático es el león y sus colores son el rojo escarlata y el dorado.
   Sir Nicholas de Mimsy-Porpington también conocido como "Nick Casi Decapitado" es el fantasma de la casa.
@@ -79,6 +80,7 @@ Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius
 </p>
 </div>
 <div *ngIf="x==3">
+    <audio autoplay src="../../assets/Audio/s.mp3"></audio>
 <img  src="../../assets/imgs/sly.jpeg"/>
 <p class="sl">Fue fundada por Salazar Slytherin.
   Las principales características de un slytherin son astucia, ingenio y ambición.
@@ -86,6 +88,7 @@ Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius
 </p>
 </div>
 <div *ngIf="x==4">
+    <audio autoplay src="../../assets/Audio/h.mp3"></audio>
 <img  src="../../assets/imgs/huf.jpg"/>
 <p class="hu">
     La fundadora es la bruja medieval Helga Hufflepuff.
@@ -96,6 +99,7 @@ Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius
 </p>
 </div>
 <div *ngIf="x==2">
+    <audio autoplay src="../../assets/Audio/r.mp3"></audio>
 <img  src="../../assets/imgs/ra.jpg"/>
 <p class="ra">Fue fundada por Rowena Ravenclaw.
   La casa Ravenclaw premia el aprendizaje, la sabiduría, el ingenio, y el intelecto de sus miembros.
@@ -108,18 +112,21 @@ Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius
 <button class="r" (click)="er()">Ravenclaw</button><br/>
 <button class="h" (click)="eh()">Hufflepuff</button><br/>
 <button class="g" (click)="eg()">Gryffindor</button><br/>
+<audio *ngIf="x==1" autoplay src="../../assets/Audio/g.mp3"></audio>
 <img *ngIf="x==1" src="../../assets/imgs/gry.jpg"/>
 <p class="gr" *ngIf="x==1" >Gryffindor fue fundada por Godric Gryffindor. Su animal emblemático es el león y sus colores son el rojo escarlata y el dorado.
   Sir Nicholas de Mimsy-Porpington también conocido como "Nick Casi Decapitado" es el fantasma de la casa
 Las principales características de los Gryffindor son el coraje y la caballerosidad.
 Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius Black.
 </p>
+<audio *ngIf="x==3" autoplay src="../../assets/Audio/s.mp3"></audio>
 <img *ngIf="x==3" src="../../assets/imgs/sly.jpeg"/>
 <p class="sl" *ngIf="x==3">Fue fundada por Salazar Slytherin.
  Las principales características de un slytherin son astucia, ingenio y ambición.
  Algunos miembros de la casa: Tom Ryddle,Bellatrix Lestrange, Severus Snape,  Draco Malfoy.
 
 </p>
+<audio *ngIf="x==4" autoplay src="../../assets/Audio/h.mp3"></audio>
 <img class="hu" *ngIf="x==4" src="../../assets/imgs/huf.jpg"/>
 <p *ngIf="x==4">
     Lu fundadora es la bruja medieval Helga Hufflepuff.
@@ -128,6 +135,7 @@ Algunos de sus miembros:Harry Potter, Albus Dumbledore,Minerva McGonagall,Sirius
     Su animal emblemático es el tejón y sus colores son el amarillo y negro.
     Algunos de sus miembros:Nymphadora Tonks, Cedric Diggory,Susan Bones,Newt Scamander.
 </p>
+<audio *ngIf="x==2" autoplay src="../../assets/Audio/r.mp3"></audio>
 <img *ngIf="x==2" src="../../assets/imgs/ra.jpg"/>
 <p  class="ra" *ngIf="x==2">Fue fundada por Rowena Ravenclaw.
   La casa Ravenclaw premia el aprendizaje, la sabiduría, el ingenio, y el intelecto de sus miembros.
